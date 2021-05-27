@@ -2,6 +2,7 @@ import { Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Text, Th,
 import { RiAddLine, RiPencilLine } from 'react-icons/ri'
 
 import { Header } from '../../components/Header'
+import { Pagination } from '../../components/Pagination'
 import { Siderbar } from '../../components/Sidebar'
 
 export default function UserList() {
@@ -33,7 +34,7 @@ export default function UserList() {
                 <Th px="6" color="gray.300" width="8">
                 <Checkbox colorScheme="pink" />
                 </Th>
-                <Th>Usuários</Th>
+                <Th>Usuário</Th>
                 <Th>Data de cadastro</Th>
                 <Th width="8"></Th>
               </Tr>
@@ -64,6 +65,8 @@ export default function UserList() {
               </Tr>
             </Tbody>
           </Table>
+
+          <Pagination />
         </Box>
       </Flex> 
     </Box>
